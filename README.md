@@ -38,3 +38,12 @@ The Game of Life, also known simply as Life, is a cellular automaton devised by 
 
 **Random Gerneration**
 ![Random Generation](./readmeRes/randGen.gif)
+
+<br/><br/>
+
+### TODO
+
+1. Add presets or initial seed option.
+2. Delay control.
+3. Add menu for presets.
+4. Display keybindinds in a better way.
