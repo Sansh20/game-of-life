@@ -32,9 +32,11 @@ The Game of Life, also known simply as Life, is a cellular automaton devised by 
 ## Preview
 
 **Gosper's Glider Gun**
+<br/>
 ![Glider Gun](./readmeRes/glidergun.gif)
 
 <br/>
 
 **Random Gerneration**
+<br/>
 ![Random Generation](./readmeRes/randGen.gif)
