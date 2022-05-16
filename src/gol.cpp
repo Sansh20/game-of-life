@@ -86,10 +86,10 @@ int gol::run(sf::RenderWindow &window) {
                         isPaused = true;
                     }
                     else if(event.key.code == sf::Keyboard::Up){
-                        delay+=sf::milliseconds(100);
+                        delay-=sf::milliseconds(100);
                     }
                     else if(event.key.code == sf::Keyboard::Down){
-                        delay-=sf::milliseconds(100);
+                        delay+=sf::milliseconds(100);
                     }
                     break;
 
