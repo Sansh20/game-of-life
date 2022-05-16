@@ -45,7 +45,8 @@ The Game of Life, also known simply as Life, is a cellular automaton devised by 
 
 
 ## Usage Instructions:
-    Download the zip, extract and run.
+    On Windows: Download the "gol.zip" from releases for Windows, extract and run.
+    On Linux: Download the "gol.zip" from releases for Linux, extract and run the run-gol.sh
     CMAKEFile requires you to have SFML installed, and needs tweaking before being able to use.
 
 
