@@ -1,4 +1,4 @@
-#include "../include/screens/gol.hpp"
+#include<screens/gol.hpp>
 
 
 int gol::run(sf::RenderWindow &window) {
@@ -24,7 +24,7 @@ int gol::run(sf::RenderWindow &window) {
     }
 
     info.setFont(rWM);
-    info.setString("K - Pause, R - Reset");
+    info.setString("K - Pause/Play, R - Reset, Up/Down Arrow - Increase/Decrease Speed");
     info.setPosition(40, 6);
     info.setFillColor(sf::Color::Black);
     info.setOutlineColor(sf::Color(169, 169, 169, 255));
@@ -38,9 +38,15 @@ int gol::run(sf::RenderWindow &window) {
     
     float blockSize= 17;
     bool isPaused = true;
+    sf::Time delay = sf::milliseconds(100);
+    
 
-    int nCols = std::ceil(desktop.height/blockSize);
-    int nRows = std::ceil(desktop.width/blockSize);
+    const int nCols = std::ceil(desktop.height/blockSize);
+    const int nRows = std::ceil(desktop.width/blockSize);
+
+    // std::vector<std::vector<int>> grid(nRows, std::vector(nCols, 0));
+
+    // std::vector<std::vector<int>> newGrid;
 
     int grid[nRows][nCols];
 
@@ -78,6 +84,12 @@ int gol::run(sf::RenderWindow &window) {
                             }
                         }
                         isPaused = true;
+                    }
+                    else if(event.key.code == sf::Keyboard::Up){
+                        delay+=sf::milliseconds(100);
+                    }
+                    else if(event.key.code == sf::Keyboard::Down){
+                        delay-=sf::milliseconds(100);
                     }
                     break;
 
@@ -153,7 +165,7 @@ int gol::run(sf::RenderWindow &window) {
         window.display();
 
         if(!isPaused){
-            sf::sleep(sf::milliseconds(100));
+            sf::sleep(delay);
         }
     }
 
