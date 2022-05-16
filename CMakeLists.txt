@@ -32,7 +32,7 @@ set(CMAKE_BUILD_TYPE "Release")
 set(CMAKE_CXX_STANDARD 17)
 # Enable additional warnings and debug mode
 # https://caiorss.github.io/C-Cpp-Notes/compiler-flags-options.html
-set (CMAKE_CXX_FLAGS "-W -pedantic")
+set (CMAKE_CXX_FLAGS "-W -pedantic -static")
 
 set(SOURCES src/main.cpp src/gol.cpp)
 
