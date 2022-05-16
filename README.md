@@ -57,3 +57,6 @@ The Game of Life, also known simply as Life, is a cellular automaton devised by 
 4. Display keybindinds in a better way.
 5. Test CMAKE more.
 
+### References
+
+Lutrarutra's Projects (reference for cmakefile) - https://github.com/lutrarutra/
