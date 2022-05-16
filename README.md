@@ -43,9 +43,17 @@ The Game of Life, also known simply as Life, is a cellular automaton devised by 
 
 <br/><br/>
 
+
+## Usage Instructions:
+    Download the zip, extract and run.
+    CMAKEFile requires you to have SFML installed, and needs tweaking before being able to use.
+
+
 ### TODO
 
 1. Add presets or initial seed option.
-2. Delay control.
+2. ~~Delay control.~~
 3. Add menu for presets.
 4. Display keybindinds in a better way.
+5. Test CMAKE more.
+
