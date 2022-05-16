@@ -5,9 +5,6 @@
 
 class gol : public screen {
 
-    private:
-        float blockSize;
-
     public:
         virtual int run(sf::RenderWindow &window);
 };

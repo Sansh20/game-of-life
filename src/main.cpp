@@ -1,5 +1,5 @@
 #include<SFML/Graphics.hpp>
-#include "../include/screens/gol.hpp"
+#include<screens/gol.hpp>
 
 
 int main(){

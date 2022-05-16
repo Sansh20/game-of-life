@@ -1,2 +1,2 @@
 #include "screen.hpp"
-#include "./screens/gol.hpp"
+#include<screens/gol.hpp>
